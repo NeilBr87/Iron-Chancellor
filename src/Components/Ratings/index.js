@@ -8,8 +8,8 @@ export default function Ratings(props) {
             <div style={{display: 'flex', flexDirection: 'column'}}>
             <h4>Protestants</h4>
             <p style={{marginTop: '-1vh'}}>{props.protestantRating}</p>
-            {props.protestantImpact === "Large impact" && <div style={{borderRadius: '50%', backgroundColor: 'red', width: '1.5vw', height: '1.5vw', margin: '0 auto'}}></div>}
-            {props.protestantImpact === "Small impact" && <div style={{borderRadius: '50%', backgroundColor: 'red', width: '1vw', height: '1vw', margin: '0 auto'}}></div>}
+            {props.protestantImpact === "Large impact" && <div style={{borderRadius: '50%', backgroundColor: 'red', width: '1.1vw', height: '1.1vw', margin: '0 auto'}}></div>}
+            {props.protestantImpact === "Small impact" && <div style={{borderRadius: '50%', backgroundColor: 'red', width: '0.7vw', height: '0.7vw', margin: '0 auto'}}></div>}
             </div>
             <div style={{display: 'flex', flexDirection: 'column'}}>
             <h4>Catholics</h4>

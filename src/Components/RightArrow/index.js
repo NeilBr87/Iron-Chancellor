@@ -8,7 +8,7 @@ export default function RightArrow(props) {
         props.setJunkerImpact("");
         props.setReichstagImpact("");
         props.setIndustrialistImpact("");
-        props.setworkerImpact("");
+        props.setWorkerImpact("");
     }
     
     function agree() {
@@ -22,6 +22,47 @@ export default function RightArrow(props) {
       if (props.cardSummary === "Y1M2") {
         props.setIndustrialistRating(props.industrialistRating + 10);
         props.setProtestantRating(props.protestantRating + 5);
+        props.setWorkerRating(props.workerRating - 10);
+        clearImpacts();
+        props.setMonth(props.month + 1);
+      }
+      if (props.cardSummary === "Y1M3") {
+        props.setProtestantRating(props.protestantRating + 10);
+        props.setCatholicRating(props.workerRating - 10);
+        props.setJunkerRating(props.junkerRating + 5);
+        clearImpacts();
+        props.setMonth(props.month + 1);
+      }
+      if (props.cardSummary === "Y1M4") {
+        props.setCatholicRating(props.catholicRating - 5);
+        props.setJunkerRating(props.junkerRating - 10);
+        props.setReichstagRating(props.reichstagRating + 10);
+        props.setIndustrialistRating(props.industrialistRating + 5);
+        props.setWorkerRating(props.workerRating + 10);
+        clearImpacts();
+        props.setMonth(props.month + 1);
+      }
+      if (props.cardSummary === "Y1M5") {
+        props.setProtestantRating(props.protestantRating + 5);
+        props.setCatholicRating(props.catholicRating - 5);
+        props.setJunkerRating(props.junkerRating + 10);
+        props.setReichstagRating(props.reichstagRating + 5);
+        props.setIndustrialistRating(props.industrialistRating + 10);
+        clearImpacts();
+        props.setMonth(props.month + 1);
+      }
+      if (props.cardSummary === "Y1M6") {
+        props.setProtestantRating(props.protestantRating - 10);
+        props.setCatholicRating(props.catholicRating + 10);
+        props.setJunkerRating(props.junkerRating - 5);
+        props.setWorkerRating(props.workerRating - 5);
+        clearImpacts();
+        props.setMonth(props.month + 1);
+      }
+      if (props.cardSummary === "Y1M7") {
+        props.setJunkerRating(props.junkerRating + 5);
+        props.setReichstagRating(props.reichstagRating - 5);
+        props.setIndustrialistRating(props.industrialistRating + 10);
         props.setWorkerRating(props.workerRating - 10);
         clearImpacts();
         props.setMonth(props.month + 1);
