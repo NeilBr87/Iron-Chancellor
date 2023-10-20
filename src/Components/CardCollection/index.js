@@ -178,7 +178,7 @@ export default function CardCollection() {
             setIndustrialistImpact("Small impact impact");
             setWorkerImpact("Small impact");
         }
-        if (year === 1872 && month === 12) {
+        if (month === 12) {
             setCardSummary("Y1M12");
             setCardText(`"Merry Christmas, Herr Chancellor."`);
             setCardAuthor("Hans von Hohenberg, Lutheran Pastor");
@@ -290,6 +290,20 @@ export default function CardCollection() {
             setIndustrialistImpact("Small impact");
             setWorkerImpact("Small impact");
         }
+        if (year === 1872 && month === 8) {
+            setCardSummary("Y2M8");
+            setCardText(`"Brunswick Cathedral had some structural damage last month - I hope the Kaiser doesn't mind some money for repairs?."`);
+            setCardAuthor("Hans von Hohenberg, Lutheran Pastor");
+            setRightArrow("The king always has Marks for God.");
+            setLeftArrow("We have more pressing concerns.");
+            setCardImage("protestants");
+            setProtestantImpact("Large impact");
+            setCatholicImpact("Small impact");
+            setJunkerImpact("Small impact");
+            setReichstagImpact("");
+            setIndustrialistImpact("");
+            setWorkerImpact("");
+        }
         if (year === 1873 && month === 9) {
             setCardSummary("Y2M9");
             setCardText(`"The French have finally paid their war debt. They've asked us to remove our troops from Paris. I think we should agree."`);
@@ -318,16 +332,57 @@ export default function CardCollection() {
             setIndustrialistImpact("");
             setWorkerImpact("");
         }
+        if (year === 1873 && month === 11) {
+            setCardSummary("Y2M11");
+            setCardText(`"There's been anti-semitic riots in Brandenburg. You should act swiftly to protect innocent Jews."`);
+            setCardAuthor("Helga Schmidt, worker representative");
+            setRightArrow("This ugliness can't stand.");
+            setLeftArrow("They should have known better than to live there.");
+            setCardImage("workers");
+            setProtestantImpact("Small impact");
+            setCatholicImpact("Small impact");
+            setJunkerImpact("Small impact");
+            setReichstagImpact("Small impact");
+            setIndustrialistImpact("");
+            setWorkerImpact("Large impact");
+        }
+        if (year === 1874 && month === 1) {
+            setCardSummary("Y3M1");
+            setCardText(`"Happy New Year, Herr Chancellor. Have you heard about the election? Those meddling Liberals won again. Why not centralise some of their duties to your office?"`);
+            setCardAuthor("Jurgen von Lehndorff, Junker representative");
+            setRightArrow("Democracy is overrated.");
+            setLeftArrow("The people have spoken.");
+            setCardImage("junkers");
+            setProtestantImpact("");
+            setCatholicImpact("");
+            setJunkerImpact("Large impact");
+            setReichstagImpact("Large impact");
+            setIndustrialistImpact("");
+            setWorkerImpact("Small impact");
+        }
+        if (year === 1874 && month === 2) {
+            setCardSummary("Y3M2");
+            setCardText(`"Extending our free trade agreement with Britain would boost our markets and avoid pointless imperial oneupsmanship."`);
+            setCardAuthor("Gunther von Haultmann, industrialist representative");
+            setRightArrow("Pip pip, tally ho.");
+            setLeftArrow("Not a chance.");
+            setCardImage("industrialists");
+            setProtestantImpact("Small impact");
+            setCatholicImpact("Small impact");
+            setJunkerImpact("Large impact");
+            setReichstagImpact("Small impact");
+            setIndustrialistImpact("Large impact");
+        }
         }, [year, month]);
 
 
 // Tally
-// Protestant: 3 issues
+// Protestant: 4 issues
 // Catholic: 4 issues
 // Junker: 2 issue
-// Reichstag: 4 issues
-// Industrialist: 4 issues
-// Worker: 3 issues
+// Reichstag: 5 issues
+// Industrialist: 5 issues
+// Worker: 4 issues
 
 
     return (
