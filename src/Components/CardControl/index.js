@@ -31,9 +31,11 @@ export default function CardControl(props) {
 
   return (
     <div>
+      <div style={{backgroundColor: '#AC8930', color: 'white', width: '60vw', margin: '0 auto', padding: '0.2vw 0.5vw 0.2vw 0.5vw', marginTop: '3vh', border: '3px inset #AC8930', borderRadius: '5px'}}>
        <p>{props.cardText}</p>
        <p>{props.cardAuthor}</p>
-    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '10vh', gap: '6vw'}}>
+       </div>
+    <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: '4vh', gap: '6vw'}}>
        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
        <p style={{fontSize: '60px', fontWeight: 'bold'}}>{'<'}</p>
        <p style={{marginTop: '-4vh', width: '8vw'}}>{props.leftArrow}</p>

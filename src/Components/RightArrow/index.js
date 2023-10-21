@@ -70,7 +70,7 @@ export default function RightArrow(props) {
     }
 
     return (
-        <div onClick={agree} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', border: '1px solid black', height: '16vh'}}>
+        <div onClick={agree} style={{display: 'flex', color: 'white', backgroundColor: '#AC8930', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '5px', border: '3px inset #AC8930', height: '16vh'}}>
             <p style={{fontSize: '60px', fontWeight: 'bold', marginTop: '-1.5vh'}}>{'>'}</p>
             <p style={{marginTop: '-4vh', width: '8vw'}}>{props.rightArrow}</p>
        </div>

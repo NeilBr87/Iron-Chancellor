@@ -48,8 +48,8 @@ export default function MMYY(props) {
     }, [props.month, props.year, props]);
 
     return (
-        <div style={{backgroundColor: '#BF4E30', width: '10vw', margin: '0 auto',  }}>
-            <p style={{marginTop: '8vh'}}>Year: {props.year}</p>
+        <div style={{backgroundColor: '#BF4E30', width: '10vw', margin: '0 auto', marginTop: '8vh', padding: '0.2vw 0.5vw 0.2vw 0.5vw', color: 'white', borderRadius: '2px'}}>
+            <p>Year: {props.year}</p>
             <p>Month: {actualMonth}</p>
         </div>
     )
