@@ -372,6 +372,91 @@ export default function CardCollection() {
             setJunkerImpact("Large impact");
             setReichstagImpact("Small impact");
             setIndustrialistImpact("Large impact");
+            setWorkerImpact("");
+        }
+        if (year === 1874 && month === 3) {
+            setCardSummary("Y3M3");
+            setCardText(`"His Holiness the Pope wants to visit Munich. I trust he will be given full state honours on arrival?"`);
+            setCardAuthor("Wolfgang Kleiner, Catholic Bishop");
+            setRightArrow("The very best of German hospitality!");
+            setLeftArrow("I have no time for men in dresses.");
+            setCardImage("catholics");
+            setProtestantImpact("Large impact");
+            setCatholicImpact("Large impact");
+            setJunkerImpact("Small impact");
+            setReichstagImpact("");
+            setIndustrialistImpact("");
+            setWorkerImpact("");
+        }
+        if (year === 1874 && month === 4) {
+            setCardSummary("Y3M4");
+            setCardText(`"England is in uproar after a mining disaster killed many workers. It might be useful to make sure our own mines are safe and up to code."`);
+            setCardAuthor("Helga Schmidt, worker representative");
+            setRightArrow("We need to look after our workers.");
+            setLeftArrow("They have canaries, don't they?.");
+            setCardImage("workers");
+            setProtestantImpact("");
+            setCatholicImpact("");
+            setJunkerImpact("Small impact");
+            setReichstagImpact("Small impact");
+            setIndustrialistImpact("Large impact");
+            setWorkerImpact("Large impact");
+        }
+        if (year === 1874 && month === 5) {
+            setCardSummary("Y3M5");
+            setCardText(`"The Catholic Centre Party are trying to use the Falk Laws to force <i>our</i> religious schools to nationalise. That's not what the legislation was for!"`);
+            setCardAuthor("Hans von Hohenberg, Lutheran Pastor");
+            setRightArrow("I hardly think Lutheran education is the problem here.");
+            setLeftArrow("What's good for the goose is good for the gander, Hans.");
+            setCardImage("protestants");
+            setProtestantImpact("Large impact");
+            setCatholicImpact("Large Impact");
+            setJunkerImpact("Small impact");
+            setReichstagImpact("");
+            setIndustrialistImpact("");
+            setWorkerImpact("");
+        }
+        if (year === 1874 && month === 5) {
+            setCardSummary("Y3M5");
+            setCardText(`"The Catholic Centre Party are trying to use the Falk Laws to force <i>our</i> religious schools to nationalise. That's not what the legislation was for!"`);
+            setCardAuthor("Hans von Hohenberg, Lutheran Pastor");
+            setRightArrow("I hardly think Lutheran education is the problem here.");
+            setLeftArrow("What's good for the goose is good for the gander, Hans.");
+            setCardImage("protestants");
+            setProtestantImpact("Large impact");
+            setCatholicImpact("Large Impact");
+            setJunkerImpact("Small impact");
+            setReichstagImpact("");
+            setIndustrialistImpact("");
+            setWorkerImpact("");
+        }
+        if (year === 1874 && month === 6) {
+            setCardSummary("Y3M6");
+            setCardText(`"If we're to be a truly modern nation, we need a postal service that works. We should invest in the Reichspost postal service. It would make business - and elections - work better."`);
+            setCardAuthor("Albert Schloss, Reichstag representative");
+            setRightArrow("This is exactly the sort of thing the treasury is for.");
+            setLeftArrow("Postal ballots? Sounds like election tampering!");
+            setCardImage("reichstag");
+            setProtestantImpact("");
+            setCatholicImpact("");
+            setJunkerImpact("");
+            setReichstagImpact("Large impact");
+            setIndustrialistImpact("Small impact");
+            setWorkerImpact("Small impact");
+        }
+        if (year === 1874 && month === 7) {
+            setCardSummary("Y3M7");
+            setCardText(`"Why do we always see each other when there's been a disaster, Herr Chancellor? Anyway, there was a huge fire in Chicago last week. Some of our cities could really use better fire safety."`);
+            setCardAuthor("Helga Schmidt, worker representative");
+            setRightArrow("I'd rather not see our cities become kilns, all things considered.");
+            setLeftArrow("Just tell people to keep buckets of water around.");
+            setCardImage("workers");
+            setProtestantImpact("Small impact");
+            setCatholicImpact("Small impact");
+            setJunkerImpact("Small impact");
+            setReichstagImpact("Small impact");
+            setIndustrialistImpact("Small impact");
+            setWorkerImpact("Large impact");
         }
         }, [year, month]);
 
